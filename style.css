@@ -1,0 +1,300 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: montserrat;
+}
+
+nav{
+	background: white;
+	height: 80px;
+	width: 100%;
+}
+label.logo{
+	color: #7FBA53;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+    font-weight: bold;
+
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	color: #7FBA53;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+a.active,a:hover{
+	background: #B7DD9B;
+	transition: .5s;
+
+}
+
+.checkbtn{
+	font-size: 30px;
+	color: #7FBA53;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+
+}
+
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+
+	nav ul li a{
+		font-size: 16px;
+
+	}
+}
+
+@media (max-width: 858px ){
+
+	.checkbtn{
+		display: block;
+
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #B7DD9B;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+    
+       nav ul li{
+       	display: block;
+       	margin: 50px 0;
+       	line-height: 30px;
+
+
+       }
+
+       nav ul li a{
+       	font-size: 20px;
+       }
+
+       a:hover,a.active{
+       	background: none;
+       	color: #7FBA53;
+
+       }
+
+       #check:checked ~ ul{
+       	left: 0;
+       	
+       }
+     
+   .search-container input{
+
+   
+   }
+
+
+}
+
+.banner{
+	width: 100%;
+	height: 400px;
+}
+
+.banner img{
+
+	width: 100%;
+	height: 400px;
+}
+
+
+
+
+.Fruits{ 
+
+     padding: 50px 100px;
+}
+
+.product-intro{
+	text-align: center;
+}
+
+.product-intro h1{
+	color: black;
+	letter-spacing: 0.2rem;
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+
+.card-container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    cursor: pointer;
+    margin: 4rem 0 ;
+}
+
+.card-container .card{
+
+	flex-basis: 20%;
+	padding: 0;
+	position: relative;
+}
+
+.card img{
+
+	    width: 100%;
+	    transition: 0.5s ease-in-out;
+
+}
+
+
+.card i{
+	color: goldenrod;
+	margin: 10px 0;
+}
+
+.card a{
+	color: white;
+	background-color: #E5604B ;
+	border: none;
+	outline: none;
+	margin-top: 15px;
+	padding: 5px 20px ;
+	text-align: center;
+
+
+
+
+}
+.card:hover img, .card:hover h1{
+	width: 120%;
+	color: black;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 2rem;
+}
+footer div{
+	flex-basis: 30%;
+}
+
+footer i{
+       margin: 0px 5px;
+}
+
+/* Shop Details start*/
+
+
+	
+	.shop{
+	
+     	display:flex ;
+     	width: 100%;
+     	margin: 20px;
+     	padding: 50px;
+     	
+     	
+	}
+
+.column img{
+
+	width: 300px;
+	height:300px;
+	
+}
+
+.content{
+	margin-left: 200px;
+}
+.content h1{
+          
+         
+          
+          font-weight: bold;
+          font-size: 35px;
+
+}
+
+.content i{
+
+         text-align: center;
+         color: orange;
+}
+
+.fill {
+	width: 100%;
+	display: flex;
+	
+
+}
+.fill input{
+	width: 60px;
+	height: 54px;
+	text-align: center;
+
+
+}
+
+.fill a{
+
+	 background-color: #7FBA53; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.fill .save{
+	background-color: whitesmoke ;
+
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	border-color: black;
+	border: 2px;
+
+}
+
+/* Shop Details End*/
+
